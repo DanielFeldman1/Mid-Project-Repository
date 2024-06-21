@@ -1,5 +1,6 @@
 public class ThreadCheckArray implements Runnable 
 {
+	//This is a test to see if the push works
 	private boolean flag;
 	private boolean [] winArray;
 	SharedData sd;
