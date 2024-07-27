@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -84,10 +86,18 @@ public class EchoServer extends AbstractServer {
 				// Get list of all restaurants from DB
 				// ------------------------STUB FOR TESTING--------------------------------
 				ArrayList<String> restaurants = new ArrayList<>();
-				restaurants.add("McDonald's");
-				restaurants.add("Dominos");
-				restaurants.add("KFC");
-				restaurants.add("YESSSSSSSS!!!!!!!!!!!!!");
+//				restaurants.add("McDonald's");
+//				restaurants.add("Dominos");
+//				restaurants.add("KFC");
+//				restaurants.add("YESSSSSSSS!!!!!!!!!!!!!");
+				ResultSet rs = oc.importRestaurants();
+				try {
+					while(rs.next())
+						restaurants.add(rs.getString(1));
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				// ------------------------STUB FOR TESTING--------------------------------
 				Message ret = new Message(MessageType.SEND_RESTAURANTS, restaurants);
 				try {
