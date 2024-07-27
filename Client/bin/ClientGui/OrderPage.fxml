@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="235.0" prefWidth="223.0"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="ClientGui.OrderPage">
+	<children>
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0"
+			minWidth="-Infinity" prefHeight="235.0" prefWidth="451.0"
+			VBox.vgrow="ALWAYS">
+			<children>
+				<Label alignment="CENTER" layoutX="62.0" layoutY="137.0"
+					style="" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+					<font>
+						<Font size="18.0" />
+					</font>
+				</Label>
+				<Button fx:id="btnNext" layoutX="35.0" layoutY="183.0"
+					mnemonicParsing="false" onAction="#btnNext" text="Next" />
+				<ComboBox fx:id="cmbChooseRestaurant" layoutX="32.0"
+					layoutY="69.0" prefWidth="150.0" promptText="Choose..." />
+				<Label layoutX="30.0" layoutY="52.0"
+					text="Which restaurant would you like to order from?" />
+				<Button id="Cancel" fx:id="btnCancel" layoutX="367.0"
+					layoutY="183.0" mnemonicParsing="false" onAction="#btnCancelClick"
+					text="Cancel" />
+				<Label layoutX="30.0" layoutY="95.0"
+					text="When do you want to get your order?" />
+				<Label layoutX="195.0" layoutY="14.0" text="Order Page" />
+				<TextField fx:id="Hour" layoutX="31.0" layoutY="112.0"
+					prefHeight="25.0" prefWidth="39.0" />
+				<TextField fx:id="Min" layoutX="82.0" layoutY="112.0"
+					prefHeight="25.0" prefWidth="39.0" />
+				<Label layoutX="75.0" layoutY="116.0" text=":" />
+				<Label fx:id="labelErrorMessage" layoutX="335.0"
+					layoutY="52.0" />
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>
