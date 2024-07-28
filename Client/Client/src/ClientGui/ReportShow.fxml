@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="594.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="135.0" layoutY="28.0" prefHeight="65.0" prefWidth="324.0" text="The requested report">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="492.0" layoutY="372.0" mnemonicParsing="false" onAction="#btnBackClick" prefHeight="40.0" prefWidth="71.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="Back">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

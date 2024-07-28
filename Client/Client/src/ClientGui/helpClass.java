@@ -10,6 +10,11 @@ import javafx.stage.Stage;
 //class to re-use code instead of rewriting things multiple times
 public class helpClass {
 	
+//	General Logout button. Needs to change DB too
+//	public void btnLogout (ActionEvent event) throws Exception {
+//		help.changeScreen("/ClientGui/LoginPage.fxml", event);
+//	}	
+	
 	public void generalBtnBack(String source,ActionEvent event) throws Exception{
 		changeScreen(source, event);
 	}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="593.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="230.0" layoutY="24.0" prefHeight="55.0" prefWidth="133.0" text="Supplier ">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="OrderNum" layoutX="237.0" layoutY="121.0" />
+      <Label layoutX="91.0" layoutY="123.0" text="Order Number: ">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ArriveTime" layoutX="230.0" layoutY="300.0" />
+      <Label layoutX="91.0" layoutY="299.0" prefHeight="26.0" prefWidth="139.0" text="input arrival time:">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="91.0" layoutY="262.0" prefHeight="21.0" prefWidth="364.0" text="**If you want to input the time of arrival of delivery:">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApprove" layoutX="91.0" layoutY="197.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="133.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="Approve Order">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbChooseStatus" layoutX="237.0" layoutY="197.0" prefHeight="40.0" prefWidth="166.0" promptText="Update Order Status" />
+      <Button fx:id="btnSave" layoutX="259.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnSaveClick" prefHeight="40.0" prefWidth="197.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="Save and send message">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLogOut" layoutX="480.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnLogOutClick" prefHeight="39.0" prefWidth="80.0" style="-fx-background-color: #B27E73; -fx-border-color: #1D1413;" text="LogOut">
+         <font>
+            <Font name="Bell MT Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

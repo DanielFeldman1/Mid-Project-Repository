@@ -73,24 +73,33 @@ public class OrderPage extends Application {
 		return orderPageController.checkInput(restaurant, hours, min);
 	}
 
-	@FXML
-	private void btnNext(ActionEvent event) {
-		if (checkInput()) {
-			orderPageController.setDesiredHour(Integer.valueOf(Hour.getText()));
-			orderPageController.setDesiredMin(Integer.valueOf(Min.getText()));
-			orderPageController.setRestaurant(cmbChooseRestaurant.getValue());
-			orderPageController.setDetails();
-			OrderController.sendOrder();// REMOVE THIS AFTER TESTING
-			//orderPageController.switchWindows(event, "/clientOrderPage/MenuPage.fxml");
-		} else {
-			labelErrorMessage.setText("Check Input");
-		}
-	}
+//	@FXML
+//	private void btnNext(ActionEvent event) {
+//		if (checkInput()) {
+//			orderPageController.setDesiredHour(Integer.valueOf(Hour.getText()));
+//			orderPageController.setDesiredMin(Integer.valueOf(Min.getText()));
+//			orderPageController.setRestaurant(cmbChooseRestaurant.getValue());
+//			orderPageController.setDetails();
+////			OrderController.sendOrder();// REMOVE THIS AFTER TESTING
+//			try {///////////WHYYYY
+//				help.changeScreen("/ClientGui/MenuGui.fxml", event);
+//			} catch (Exception e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		} else {
+//			labelErrorMessage.setText("Check Input");
+//		}
+//	}
 
+	public void btnNext (ActionEvent event) throws Exception 
+	{
+		help.changeScreen("/ClientGui/ChooseSupplyMethodPage.fxml", event);
+	}
+	
 	@FXML
 	private void btnCancelClick(ActionEvent event) throws Exception
 	{
 		help.generalBtnBack("/ClientGui/ClientStartGui.fxml", event);
 	}
-
 }

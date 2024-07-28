@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="561.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGuiCEO.showOrderGui">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="561.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGuiCEO.showOrderGui">
    <children>
       <Label layoutX="194.0" layoutY="34.0" prefHeight="53.0" prefWidth="173.0" text="CEO Page:">
          <font>
@@ -28,29 +28,29 @@
             <Font name="Bell MT" size="16.0" />
          </font>
       </Label>
-      <Button id="btnBack" fx:id="btnCancel" layoutX="468.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnCancelClick" prefHeight="36.0" prefWidth="55.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="exit">
+      <Button id="btnLogOut" fx:id="btnLogOut" layoutX="450.0" layoutY="459.0" mnemonicParsing="false" onAction="#btnCancelClick" prefHeight="36.0" prefWidth="82.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="LogOut">
          <font>
-            <Font size="14.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="btnShow" layoutX="75.0" layoutY="444.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="36.0" prefWidth="78.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="show">
+      <Button fx:id="btnShow" layoutX="232.0" layoutY="424.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="31.0" prefWidth="75.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="show">
          <font>
-            <Font size="18.0" />
+            <Font name="Bell MT Bold" size="18.0" />
          </font>
       </Button>
-      <ComboBox layoutX="183.0" layoutY="117.0" prefHeight="31.0" prefWidth="173.0" promptText="Type of reports" />
+      <ComboBox fx:id="cmTypeReport1" layoutX="183.0" layoutY="117.0" prefHeight="31.0" prefWidth="173.0" promptText="Type of reports" />
       <Label id="lblOrder#" layoutX="59.0" layoutY="293.0" prefHeight="36.0" prefWidth="55.0" text="Type:">
          <font>
             <Font name="Bell MT" size="20.0" />
          </font>
       </Label>
-      <ComboBox layoutX="183.0" layoutY="298.0" prefHeight="31.0" prefWidth="173.0" promptText="Type of reports" />
+      <ComboBox fx:id="cmTypeReport2" layoutX="183.0" layoutY="298.0" prefHeight="31.0" prefWidth="173.0" promptText="Type of reports" />
       <Label id="lblRestaurant" layoutX="57.0" layoutY="342.0" prefHeight="53.0" prefWidth="117.0" text="Restaurant:">
          <font>
             <Font name="Bell MT" size="20.0" />
          </font>
       </Label>
-      <ComboBox layoutX="183.0" layoutY="171.0" prefHeight="31.0" prefWidth="173.0" />
-      <ComboBox layoutX="183.0" layoutY="353.0" prefHeight="31.0" prefWidth="173.0" />
+      <ComboBox fx:id="cmNameRest1" layoutX="183.0" layoutY="171.0" prefHeight="31.0" prefWidth="173.0" />
+      <ComboBox fx:id="cmNameRest2" layoutX="183.0" layoutY="353.0" prefHeight="31.0" prefWidth="173.0" />
    </children>
 </Pane>
