@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="561.0" style="-fx-background-color: #FADDD7;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientGui.showOrderGui">
+   <children>
+      <Label layoutX="168.0" layoutY="69.0" prefHeight="53.0" prefWidth="220.0" text="Your Order:">
+         <font>
+            <Font name="Bell MT" size="36.0" />
+         </font>
+      </Label>
+      <Label id="lblRestaurant" layoutX="57.0" layoutY="188.0" prefHeight="53.0" prefWidth="117.0" text="Restaurant:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label id="lblOrder#" layoutX="51.0" layoutY="135.0" prefHeight="53.0" prefWidth="129.0" text="Order Number:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label id="lblTotalPrice" layoutX="57.0" layoutY="241.0" prefHeight="53.0" prefWidth="117.0" text="Total Price:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label id="lblOrderList#" layoutX="59.0" layoutY="294.0" prefHeight="53.0" prefWidth="173.0" text="Order List Number:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <Label id="lblOrderAddress" layoutX="59.0" layoutY="347.0" prefHeight="53.0" prefWidth="139.0" text="Order Address:">
+         <font>
+            <Font name="Bell MT" size="20.0" />
+         </font>
+      </Label>
+      <TextField id="lblOrderRestaurant" fx:id="txtOrderNum" layoutX="250.0" layoutY="149.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField id="lblOrderOrderNum" fx:id="txtRestaurant" editable="false" layoutX="250.0" layoutY="202.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField id="lblOrderTotalPrice" fx:id="txtTotalPrice" editable="false" layoutX="250.0" layoutY="255.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField id="lblOrderOrderListNum" fx:id="txtOrderListNum" editable="false" layoutX="250.0" layoutY="308.0" prefHeight="25.0" prefWidth="220.0" />
+      <TextField id="lblOrderOrderAddress" fx:id="txtOrderAddress" editable="false" layoutX="250.0" layoutY="361.0" prefHeight="25.0" prefWidth="220.0" />
+      <Button id="btnBack" fx:id="btnBack" layoutX="478.0" layoutY="443.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="36.0" prefWidth="55.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="Back">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnShow" layoutX="269.0" layoutY="425.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="36.0" prefWidth="55.0" style="-fx-border-color: #1D1413; -fx-background-color: #B27E73;" text="show">
+         <font>
+            <Font name="Bell MT Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
